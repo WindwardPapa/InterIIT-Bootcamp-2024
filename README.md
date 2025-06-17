@@ -1,24 +1,26 @@
-# InterIIT-Bootcamp-2024
-# 📈 Market Neutral Mean Reversion Strategy
+# 📈 Market Neutral Mean Reversion using Dynamic Momentum Scoring
 
-This project explores a **market-neutral trading strategy** based on **mean reversion**. It uses historical stock price data to identify cointegrated asset pairs and applies statistical methods to develop and backtest a long-short strategy.
+This project presents a **market-neutral long-short trading strategy** based on a **dynamic momentum ranking system**. It combines RSI and MACD signals, weighted by their **historical predictive performance**, and then further refines this signal by incorporating a **volume-based weighting mechanism**.
 
 ---
 
 ## 🔍 Overview
 
-Market-neutral strategies aim to eliminate market risk by taking offsetting long and short positions. This notebook focuses on:
+Rather than using traditional statistical arbitrage or cointegration, this strategy utilizes **momentum ranking signals** to construct a zero-beta portfolio. The key innovation is a **multi-level weighting system**:
 
-- Identifying **cointegrated pairs**
-- Using **z-score of price spread** to determine trading signals
-- Simulating trades with **backtesting**
-- Evaluating performance metrics such as **Sharpe ratio**, **returns**, and **drawdown**
+- Computes **RSI** and **MACD** for a universe of stocks
+- Evaluates each indicator’s **past effectiveness** in predicting returns
+- Weights the indicators accordingly
+- Combines them into a **momentum score**, further **weighted by a traded volume factor**
+- Ranks all assets, going **long on top-ranked** and **short on bottom-ranked** securities
+
+The strategy is designed to exploit **short-term mean-reverting opportunities** in a **market-neutral** fashion.
 
 ---
 
 ## 🛠️ Installation
 
-Clone the repository and install required dependencies:
+Clone the repository and install dependencies:
 
 ```bash
 git clone https://github.com/your-username/market-neutral-mean-reversion.git
