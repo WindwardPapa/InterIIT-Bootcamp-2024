@@ -1,5 +1,5 @@
-## Inter IIT Bootcamp 2024
-# 📈 Market Neutral Mean Reversion using Dynamic Momentum Scoring
+# Inter IIT Bootcamp 2024
+## 📈 Market Neutral Mean Reversion using Dynamic Momentum Scoring
 
 This project presents a **market-neutral long-short trading strategy** based on a **dynamic momentum ranking system**. It combines RSI and MACD signals, weighted by their **historical predictive performance**, and then further refines this signal using a **volume-based weighting mechanism**.
 
