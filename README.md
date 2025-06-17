@@ -5,7 +5,7 @@ This project presents a **market-neutral long-short trading strategy** based on 
 
 ## 🔍 Overview
 
-Instead of using traditional statistical arbitrage (like cointegration), this strategy adopts a **signal-based momentum approach**:
+Instead of using traditional statistical arbitrage (like cointegration, etc.), this strategy adopts a **signal-based momentum approach**:
 
 - Calculates **RSI** and **MACD** for a set of equities
 - Evaluates each indicator's **predictive strength based on historical returns**
